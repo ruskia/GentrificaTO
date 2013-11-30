@@ -1,0 +1,90 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+html.fullscreen
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+  background-color: #ffffff
+  font-family: Arial, Helvetica, sans-serif
+  line-height: 140%
+  font-size: 11pt
+
+.fullscreen body
+  overflow: hidden
+
+.scroll body
+  overflow: auto
+
+.fullscreen #map
+  height: 100%
+
+.scroll #map
+  height: 250px
+
+.logo
+  position: absolute
+  left: 15px
+  width: 130px
+  height: 40px
+  opacity: 0.9
+  z-index: 1000
+
+.fullscreen .logo
+  bottom: 15px
+
+.scroll .logo
+  top: 195px
+
+.header
+  background-color: rgba(255,255,255,0.75)
+  position: absolute
+  left: 0
+  top: 0
+  padding: 5px 15px
+  width: 100%
+  z-index: 1000
+
+#search
+  width: 250px
+  border: 1px solid #cccccc
+  padding: 5px
+
+form
+  margin: 0
+  padding: 0
+  display: inline
+
+#options
+  display: none
+  position: absolute
+  right: 10px
+  top: 15px
+  cursor: pointer
+
+#navigation
+  list-style-type: none
+  padding: 0
+  margin: 0
+  display: inline-block
+
+#navigation li
+  display: inline
+  margin-left: 20px
+  padding: 0
+
+#navigation a:link, #navigation a:visited
+  color: #000000
+  font-size: 10pt
+  text-shadow: 0 1px 0 white
+  white-space: nowrap
+  text-decoration: none
+  cursor: pointer
+
+

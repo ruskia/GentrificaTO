@@ -1,7 +1,36 @@
 doctype 5
-html
+html(class="fullscreen")
   head
     title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.7/leaflet.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://cdn.leafletjs.com/leaflet-0.7/leaflet.js')
+    script(src="http://www.openlayers.org/api/OpenLayers.js")
+    script(src='/javascripts/State.js')
+    script(src='/javascripts/Util.js')
+    script(src='/javascripts/Map.js')
+    script(src='/javascripts/Navigation.js')
+    script(src='/javascripts/Search.js')
+    script(src='/javascripts/OSMBuildings-Leaflet.js')
+    script(src='/javascripts/OSMBuildings-OpenLayers.js')
+    
+      
   body
+    div(class="header")
+      form
+        input(type="search", id="search", name="search", autocorrect="off", placeholder="Cerca..")
+      img(src="/images/options.png", id="options", alt="Options")
+      ul(id="navigation")
+        li
+          a(href="/gentrification") Gentrification
+        li
+          a(href="/esempi") Esempi
+        li
+          a(href="/fonti") Fonti
+        li
+          a(href="/contribuisci") Contribuisci
+        li
+          a(href="/ringraziamenti") Ringraziamenti
     block content

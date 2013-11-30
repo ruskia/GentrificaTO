@@ -1,14 +1,11 @@
 extends layout
 
 block content
-  div(id="map", class="leaflet-container leaflet-fade-anim", tabindex=0, style="position: relative;")
-  a(href="http://localhost:8080")
-    img(src="./images/logo.png", alt="Home", title="GentrificaTO", class="logo")
-  
+  div(id="map")
   script.
       var mapOptions = {
-        type: 'Leaflet',
-        loadData: true
+        type: 'OpenLayers',
+        loadData: false
       };
 
       document.addEventListener('DOMContentLoaded', function() {
@@ -26,4 +23,3 @@ block content
           Navigation.hideMenu();
         };
       });
-     
